@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background-color: black;
+  justify-content: space-around;
+}
+
+footer button {
+  border: none;
+  background: none;
+  font-size: xx-large;
+}

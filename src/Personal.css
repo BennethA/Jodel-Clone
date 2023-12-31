@@ -1,0 +1,148 @@
+* { 
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.personalMain {
+  top: 50px;
+  position: relative;
+  margin: 10px 10px 110px 10px;
+}
+
+.personalHeader {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  position: fixed;
+  background-color: rgb(14, 13, 13);
+}
+
+.homeBtn {
+  width: 40px;
+  height: 100%;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.homeBtn a{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  font-size: xx-large;
+}
+
+.personalLocation {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  font-size: 140%;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  padding: 10px;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(rgb(255, 166, 0), rgb(196, 73, 93));   
+}
+
+.headingTitle {
+  padding: 5px;
+}
+
+.headingDesc {
+  letter-spacing: 0.15vh;
+}
+
+.optionsHead {
+  padding: 20px 0;
+  font-size: large;
+  font-weight: bold;
+}
+
+.optionsList {
+  width: 100%;
+  border: none;
+  height: 50px;
+  font-size: large;
+  text-align: left;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: rgb(14, 13, 13);
+}
+
+.optionsList:active {
+  background-color: rgb(0, 0, 0);
+}
+
+.powers {
+  margin-top: 10px;
+}
+
+.powersHead {
+  padding: 10px 0;
+}
+
+.powersHead p{
+  font-size: 140%;
+  font-weight: bold;
+}
+
+.powersOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.powersOptions button {
+  border: none;
+  width: 120px;
+  border-radius: 10px;
+  background: linear-gradient(160deg, red, blue);
+}
+
+.powersOptionsSymbols {
+  font-size: xx-large;
+}
+
+.powersOptions p {
+  font-weight: bold;
+}
+
+.bottomNav {
+  display: flex;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgb(14, 13, 13);
+}
+
+.bottomNavHead {
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  font-size: x-large;
+}
+
+.bottomNavDesc {
+  padding: 5px;
+  text-align: center;
+}
+
+.bottomNavSymbol {
+  display: flex;
+  align-items: center;
+  font-size: xx-large;
+  justify-content: center;
+}
