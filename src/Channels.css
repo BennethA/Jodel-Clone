@@ -6,7 +6,56 @@
 }
 
 .channelsMain {
-  top: 50px;
+  top: 90px;
   position: relative;
-  margin: 10px 10px 110px 10px;
+}
+
+.channelsMainHeader {
+  left: 0;
+  right: 0;
+  top: 39px;
+  position: fixed;
+  padding: 5px 10px;
+  background-color: rgb(32, 30, 30);
+}
+
+.channelsSearch {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.channelsSearch input {
+  width: 90%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+.channelsSearch button {
+  width: 10%;
+  height: 100%;
+  border: none;
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.channelsSmall {
+  font-size: small;
+}
+
+.plus{
+  width: 40px;
+  display: flex;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: xx-large;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(59, 59, 27);
 }

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.locationMainHeader {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  position: fixed;
+  background-color: rgb(32, 30, 30);
+}
+
+.locationAndKarma {
+  display: flex;
+  padding: 5px 0;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  font-size: 140%;
+}
+
+.karma {
+  right: 0;
+  height: 100%;
+  display: flex;
+  line-height: 15px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.karma p {
+  text-align: center;
+}
+
+.karma small {
+  font-size: 10px;
+  text-align: center;
+}

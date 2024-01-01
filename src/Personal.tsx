@@ -22,18 +22,30 @@ const Personal = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit
           </p>
         </div>
-        <div className="optionsHead">
-          <p>My Jodel</p>
+        <div className="options">
+          <div className="optionsHead">
+            <p>My Jodel</p>
+          </div>
+          <div>
+            <button className="optionsList">
+              Community Blog
+            </button>
+            <button className="optionsList">
+              My Jodels
+            </button>
+            <button className="optionsList">
+              My Replies
+            </button>
+            <button className="optionsList">
+              My Votes
+            </button>
+            <button className="optionsList">
+              My Pins
+            </button>
+          </div>
         </div>
-        <div className="pesonalOptions">
-          <button className="optionsList">Community Blog</button>
-          <button className="optionsList">My Jodels</button>
-          <button className="optionsList">My Replies</button>
-          <button className="optionsList">My Votes</button>
-          <button className="optionsList">My Pins</button>
-        </div>
-        <div className="powers">
-          <div className="powersHead">
+        <div>
+          <div className="optionsHead">
             <p>Powers</p>
           </div>
             <div className="powersOptions">
@@ -51,23 +63,23 @@ const Personal = () => {
               </button>
             </div>
         </div>
-        <div className="powers">
-          <div className="powersHead">
+        <div>
+          <div className="optionsHead">
             <p>Achivements</p>
           </div>
-            <div className="powersOptions">
+            <div className="achievementOptions">
               <button>
-                <span className='powersOptionsSymbols'>&#10084;</span>
+                <span className='achievemeentOptionsSymbols'>&#10084;</span>
                 <p>-Thanks</p>
                 <small>overall</small>
               </button>
               <button>
-                <span className='powersOptionsSymbols'>&#8962;</span>
+                <span className='achievemeentOptionsSymbols'>&#8962;</span>
                 <p>- Karma</p>
                 <small>of past week</small>
               </button> 
               <button>
-                <span className='powersOptionsSymbols'>&#128568;</span>
+                <span className='achievemeentOptionsSymbols'>&#128568;</span>
                 <p>- Days</p>
                 <small>blessed to have you</small>
               </button>

@@ -12,7 +12,7 @@ footer {
   display: flex;
   position: fixed;
   align-items: center;
-  background-color: black;
+  background-color: rgb(32, 30, 30);
   justify-content: space-around;
 }
 

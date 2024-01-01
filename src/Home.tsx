@@ -7,7 +7,7 @@ const home = () => {
   return (
     <>
     <div className="homeMain">
-      <div className="homeMainHeader">
+      <div className="locationMainHeader">
         <div className="fiterPosts">
           <div>
             <button>Newest</button>

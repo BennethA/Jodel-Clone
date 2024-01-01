@@ -26,6 +26,7 @@
   left: 0;
   right: 0;
   height: 50px;
+  z-index: 100;
   display: flex;
   position: fixed;
   background-color: rgb(24, 23, 23);
@@ -49,13 +50,4 @@
   font-weight: bold;
   align-items: center;
   justify-content: center;
-}
-
-.settingsOwn {
-  display: flex;
-  align-items: center;
-}
-
-.settingsOwn p:first-child {
-  margin-right: 10px;
 }
