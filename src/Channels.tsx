@@ -1,8 +1,10 @@
 import './Channels.css'
+import LocationHeaderOne from './LocationHeaderOne'
 
 const Channels = () => {
   return (
     <>
+    <LocationHeaderOne/>
       <div className="channelsMain">
         <div className="locationMainHeader">
           <div className="channelsMainHeader">

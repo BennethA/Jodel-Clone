@@ -14,20 +14,24 @@
 }
 
 .locationAndKarma {
-  display: flex;
   padding: 5px 0;
   font-weight: bold;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
 .location {
+  width: 100%;
+  text-align: center;
+}
+
+.locationText {
   font-size: 140%;
 }
 
 .karma {
+  top: 0;
   right: 0;
-  height: 100%;
+  height: 40px;
   display: flex;
   line-height: 15px;
   position: absolute;
@@ -42,4 +46,73 @@
 .karma small {
   font-size: 10px;
   text-align: center;
+}
+
+.locationDropdownMenu {
+  left: 0;
+  right: 0;
+  top: 78px;
+  position: fixed;
+  padding: 5px 10px;
+  background-color: rgb(32, 30, 30);
+}
+
+.active {
+  display: none;
+}
+
+.inactive {
+  display: block;
+}
+
+.locationDropdownMenuLocation {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.locationDropdownMenuLocation hr{
+  width: 100%;
+  margin-left: 20px;
+}
+
+.locationDropdownMenuInfo {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.locationDropdownMenuSymbol {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin-right: 10px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 240, 39);
+}
+
+.locationDropdownMenuRange {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.locationDropdownMenuRange hr{
+  width: 100%;
+  margin-left: 20px;
+}
+
+.locationDropdownRangeInfo span p{
+  font-weight: bold;
+  color: rgb(173, 173, 173);
+}
+
+.locationDropdownRangeInfo span small{
+  font-size: small;
+  color: rgb(173, 173, 173);
 }

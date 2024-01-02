@@ -1,11 +1,10 @@
 import './App.css'
-import Bottomnav from './Bottomnav';
+import Home from './Home';
 import Channels from './Channels';
-import Home from './Home'
-import LocationHeaderOne from './LocationHeaderOne';
+import NotifsAndChats from './NotifsAndChats'
 import Personal from './Personal'
 import Settings from './Settings'
-import NotifsAndChats from './NotifsAndChats'
+import Bottomnav from './Bottomnav';
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,7 +16,6 @@ function App() {
   return (
     <>
     <Router>
-      <LocationHeaderOne/>
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route path='/Channels' element={<Channels/>}/>

@@ -86,7 +86,7 @@ const Personal = () => {
             </div>
         </div>
         <div className="bottomNav">
-          <div>
+          <div className='bottomNavInfo'>
             <p className="bottomNavHead">
               Invite Friends
             </p>

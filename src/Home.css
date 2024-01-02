@@ -43,24 +43,37 @@
 }
 
 .fiterPosts div button:hover {
-  z-index: -100;
   background-color: rgb(194, 194, 43);
 }
 
-.postsSection {
+.post {
+  display: flex;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: blueviolet;
 }
 
-.post {
-  margin: 15px 0;
-  border-radius: 10px;  
-  padding: 20px 10px 10px 10px;
-  box-shadow: 0px -2px 10px white;
+.post small span {
+  margin: 0 5px;
 }
 
 .post p {
   width: 100%;
   font-size: 110%;
   margin-bottom: 10px;
+}
+
+.postsVote {
+  display: flex;
+  padding: 0 5px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.postsVote span {
+  font-size: large;
+  font-weight: bold;
 }
 
 img {

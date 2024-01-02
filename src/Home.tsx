@@ -1,13 +1,12 @@
 import './Home.css'
-import {
-  Link 
-} from 'react-router-dom';
+import LocationHeaderOne from './LocationHeaderOne'
 
 const home = () => {
   return (
     <>
+    <LocationHeaderOne/>
     <div className="homeMain">
-      <div className="locationMainHeader">
+      <div>
         <div className="fiterPosts">
           <div>
             <button>Newest</button>
@@ -18,94 +17,125 @@ const home = () => {
       </div>
       <div className="postsSection">
         <div className="post">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
-          </p>
-          <div className="options">
-            <div className="commentOption">
-              Comments
-            </div>
+          <div>
+            <small>
+              <span>&#127968; Ga</span>
+              <span>@Main</span>
+              <span>2min</span>
+            </small>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
+            </p>
+          </div>
+          <div className='postsVote'>
+            <span>/\</span>
+            <span>0</span>
+            <span>\/</span>
           </div>
         </div>
         <div className="post">
-          <p>
-            <img src="/Pictures/easter.jpg" alt=""></img>
-          </p>
-          <div className="options">
-            <div className="commentOption">
-              Comments
-            </div>
+          <div>
+            <small>
+              <span>&#127968; Ga</span>
+              <span>@Main</span>
+              <span>2min</span>
+            </small>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita 
+            </p>
+          </div>
+          <div className='postsVote'>
+            <span>/\</span>
+            <span>0</span>
+            <span>\/</span>
           </div>
         </div>
         <div className="post">
-          <p>
-            Lorem ipsum d
-          </p>
-          <div className="options">
-            <div className="commentOption">
-              Comments
-            </div>
+          <div>
+            <small>
+              <span>&#127968; Ga</span>
+              <span>@Main</span>
+              <span>2min</span>
+            </small>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita cul
+            </p>
+          </div>
+          <div className='postsVote'>
+            <span>/\</span>
+            <span>0</span>
+            <span>\/</span>
           </div>
         </div>
         <div className="post">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
-          </p>
-          <div className="options">
-            <div className="commentOption">
-              Comments
-            </div>
+          <div>
+            <small>
+              <span>&#127968; Ga</span>
+              <span>@Main</span>
+              <span>2min</span>
+            </small>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab u
+            </p>
+          </div>
+          <div className='postsVote'>
+            <span>/\</span>
+            <span>0</span>
+            <span>\/</span>
           </div>
         </div>
         <div className="post">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
-          </p>
-          <div className="options">
-            <div className="commentOption">
-              Comments
-            </div>
+          <div>
+            <small>
+              <span>&#127968; Ga</span>
+              <span>@Main</span>
+              <span>2min</span>
+            </small>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
+            </p>
+          </div>
+          <div className='postsVote'>
+            <span>/\</span>
+            <span>0</span>
+            <span>\/</span>
           </div>
         </div>
         <div className="post">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
-          </p>
-          <div className="options">
-            <div className="commentOption">
-              Comments
-            </div>
+          <div>
+            <small>
+              <span>&#127968; Ga</span>
+              <span>@Main</span>
+              <span>2min</span>
+            </small>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
+            </p>
+          </div>
+          <div className='postsVote'>
+            <span>/\</span>
+            <span>0</span>
+            <span>\/</span>
           </div>
         </div>
         <div className="post">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
-          </p>
-          <div className="options">
-            <div className="commentOption">
-              Comments
-            </div>
+          <div>
+            <small>
+              <span>&#127968; Ga</span>
+              <span>@Main</span>
+              <span>2min</span>
+            </small>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
+            </p>
           </div>
-        </div>
-        <div className="post">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
-          </p>
-          <div className="options">
-            <div className="commentOption">
-              Comments
-            </div>
-          </div>
-        </div>
-        <div className="post">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis iure, ab ullam nihil repellat accusamus sed in provident corporis, expedita culpa esse unde mollitia? Recusandae laborum obcaecati harum eius?
-          </p>
-          <div className="options">
-            <div className="commentOption">
-              Comments
-            </div>
+          <div className='postsVote'>
+            <span>/\</span>
+            <span>0</span>
+            <span>\/</span>
           </div>
         </div>
       </div>

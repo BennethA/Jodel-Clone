@@ -1,3 +1,39 @@
 .notifsAndChatsMain {
+  top: 100px;
+  position: relative;
+  background-color: green;
+}
+
+.notifsAndChatsMainAlarm {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
   background-color: red;
+}
+
+.notifsAndChatsMainHeader {
+  left: 0;
+  right: 0;
+  top: 39px;
+  height: 60px;
+  position: fixed;
+  background-color: rgb(32, 30, 30);
+}
+
+.notifsAndChatsMainHeader button{
+  width: 50%;
+  height: 100%;
+  color: gray;
+  font-size: large;
+  font-weight: bold;
+  border: 2px solid rgb(32, 30, 30);
+  background-color: rgb(32, 30, 30);
+}
+
+.notifsAndChatsMainHeader button:active{
+  color: aqua;
+  border-bottom: 2px solid aqua;
 }
