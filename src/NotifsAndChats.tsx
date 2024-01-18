@@ -33,7 +33,7 @@ const notifsAndChats = () => {
           </div>
         </div>
         <div className="locationMainHeader">
-          <div className="notifsAndChatsMainAlarm">
+          <div className="notifsAndChatsMainAlarm">  
             <span>
               Alert
             </span>
