@@ -1,7 +1,6 @@
 .notifsAndChatsMain {
   top: 100px;
   position: relative;
-  background-color: green;
 }
 
 .notifsAndChatsMainAlarm {
@@ -11,7 +10,6 @@
   position: absolute;
   align-items: center;
   justify-content: center;
-  background-color: red;
 }
 
 .notifsAndChatsMainHeader {
@@ -30,10 +28,15 @@
   font-size: large;
   font-weight: bold;
   border: 2px solid rgb(32, 30, 30);
-  background-color: rgb(32, 30, 30);
 }
 
-.notifsAndChatsMainHeader button:active{
-  color: aqua;
-  border-bottom: 2px solid aqua;
+.click {
+  transition: 0.3s ;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.nnclick {
+  transition: 0.3s ;
+  background-color: rgb(32, 30, 30);
 }

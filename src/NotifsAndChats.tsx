@@ -1,6 +1,29 @@
+import { useState } from 'react'
 import './NotifsAndChats.css'
+import Chats from './Chats'
 
 const notifsAndChats = () => {
+  let [notClick, notOnclick] = useState(false)
+  let [chatClick, notchatClick] = useState(true)
+
+  function newNotifFunc () {
+    if(chatClick) {
+      notOnclick(!notClick); 
+      notchatClick(!chatClick)
+    } else {
+      notOnclick(notClick);
+    }
+  }
+
+  function newChatFunc () {
+    if(chatClick) {
+      notOnclick(notClick);
+    } else {
+      notOnclick(!notClick); 
+      notchatClick(!chatClick)
+    }
+  }
+
   return (
     <>
       <div className="notifsAndChatsMain">
@@ -12,19 +35,19 @@ const notifsAndChats = () => {
         <div className="locationMainHeader">
           <div className="notifsAndChatsMainAlarm">
             <span>
-              AA
+              Alert
             </span>
           </div>
           <div className="notifsAndChatsMainHeader">
-            <button>
+            <button onClick={newNotifFunc} className={notClick ? 'click' : 'nnclick'} >
               NOTIFICATIONS
             </button>
-            <button>
+            <button onClick={newChatFunc} className={chatClick ? 'click' : 'nnclick'} >
               CHATS
             </button>
           </div>
         </div>
-        <p>bjhvhvghvgjvghvg</p>
+        pdhjvdjbsdjdhvshbhvh
       </div>
     </>
   )

@@ -48,21 +48,24 @@
   text-align: center;
 }
 
-.locationDropdownMenu {
+.active {
   left: 0;
   right: 0;
   top: 78px;
+  display: none;
   position: fixed;
   padding: 5px 10px;
   background-color: rgb(32, 30, 30);
 }
 
-.active {
-  display: none;
-}
-
 .inactive {
+  left: 0;
+  right: 0;
+  top: 78px;
   display: block;
+  position: fixed;
+  padding: 5px 10px;
+  background-color: rgb(32, 30, 30);
 }
 
 .locationDropdownMenuLocation {

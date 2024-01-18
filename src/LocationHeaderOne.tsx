@@ -14,7 +14,7 @@ const LocationHeaderOne = () => {
           <div className="location" onClick={() => {setOpen(!open)}}>
             <div className="locationText">&#128205; Ga</div>
           </div>
-          <div className={`locationDropdownMenu ${open ? 'active' : 'inactive'}`}>
+          <div className={`${open ? 'inactive' : 'active'} `}>
             <div className="locationDropdownMenuLocation">
               Location
               <hr />
