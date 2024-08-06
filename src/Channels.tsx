@@ -1,5 +1,5 @@
 import './Channels.css'
-import LocationHeaderOne from './LocationHeaderOne'
+import LocationHeaderOne from './LocationHeader'
 
 const Channels = () => {
   return (

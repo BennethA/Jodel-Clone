@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import './NotifsAndChats.css'
-import Chats from './Chats'
 
-const notifsAndChats = () => {
-  let [notClick, notOnclick] = useState(false)
-  let [chatClick, notchatClick] = useState(true)
+const NotifsAndChats = () => {
+  const [notClick, notOnclick] = useState(false)
+  const [chatClick, notchatClick] = useState(true)
 
   function newNotifFunc () {
     if(chatClick) {
@@ -53,4 +52,4 @@ const notifsAndChats = () => {
   )
 }
 
-export default notifsAndChats
+export default NotifsAndChats

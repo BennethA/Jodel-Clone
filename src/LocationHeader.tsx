@@ -1,5 +1,5 @@
+import './LocationHeader.css'
 import { useState } from 'react'
-import './LocationHeaderOne.css'
 import { Link } from 'react-router-dom'
 
 const LocationHeaderOne = () => {

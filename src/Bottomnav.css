@@ -12,8 +12,8 @@ footer {
   display: flex;
   position: fixed;
   align-items: center;
-  background-color: rgb(32, 30, 30);
   justify-content: space-around;
+  background-color: rgb(32, 30, 30);
 }
 
 footer button {

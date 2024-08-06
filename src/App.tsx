@@ -1,10 +1,10 @@
 import './App.css'
 import Home from './Home';
-import Channels from './Channels';
-import NotifsAndChats from './NotifsAndChats'
 import Personal from './Personal'
 import Settings from './Settings'
+import Channels from './Channels';
 import Bottomnav from './Bottomnav';
+import NotifsAndChats from './NotifsAndChats'
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,7 +17,7 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route exact path='/' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/Channels' element={<Channels/>}/>
         <Route path='/NotifsAndChats' element={<NotifsAndChats/>}/>
         <Route path='/Personal' element={<Personal/>}/>
