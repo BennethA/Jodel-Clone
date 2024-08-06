@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './NotifsAndChats.css'
 
 const NotifsAndChats = () => {
-  const [notClick, notOnclick] = useState(false)
-  const [chatClick, notchatClick] = useState(true)
+  const [notClick, notOnclick] = useState(true)
+  const [chatClick, notchatClick] = useState(false)
 
   function newNotifFunc () {
     if(chatClick) {
@@ -32,11 +32,6 @@ const NotifsAndChats = () => {
           </div>
         </div>
         <div className="locationMainHeader">
-          <div className="notifsAndChatsMainAlarm">  
-            <span>
-              Alert
-            </span>
-          </div>
           <div className="notifsAndChatsMainHeader">
             <button onClick={newNotifFunc} className={notClick ? 'click' : 'nnclick'} >
               NOTIFICATIONS
@@ -46,7 +41,9 @@ const NotifsAndChats = () => {
             </button>
           </div>
         </div>
-        pdhjvdjbsdjdhvshbhvh
+        {
+          notClick ? 'Notificatiions' : 'Chats'
+        }
       </div>
     </>
   )

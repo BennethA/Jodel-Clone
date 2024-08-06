@@ -65,9 +65,10 @@
 }
 
 .postsVote {
+  gap: 2px;
   display: flex;
   padding: 0 5px;
-  align-items: center;
+  align-items: right;
   flex-direction: column;
   justify-content: center;
 }
@@ -75,6 +76,11 @@
 .postsVote span {
   font-size: large;
   font-weight: bold;
+}
+
+.postsVote span:nth-child(2){
+  margin-top: 4px;
+  font-weight: bolder;
 }
 
 img {

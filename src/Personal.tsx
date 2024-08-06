@@ -95,7 +95,7 @@ const Personal = () => {
             </p>
           </div>
           <div className='bottomNavSymbol'>
-            <p>&#x003E;</p>
+            <p>&#8594;</p>
           </div>
         </div>
       </div>

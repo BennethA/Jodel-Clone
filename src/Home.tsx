@@ -34,9 +34,9 @@ const home = () => {
                 </p>
               </div>
               <div className='postsVote'>
-                <span>/\</span>
+                <span>&#8593;</span>
                 <span>0</span>
-                <span>\/</span>
+                <span>&#8595;</span>
               </div>
               </div>
             )
