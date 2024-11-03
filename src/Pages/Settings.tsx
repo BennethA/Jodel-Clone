@@ -1,99 +1,92 @@
 import "../Pages/Settings.css";
 import { Link } from "react-router-dom";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Settings = () => {
   const generalLists = [
     {
-      icon: "",
+      icon: "💾",
       name: "Sync my account",
     },
     {
-      icon: "",
+      icon: "❤",
       name: "Support us",
     },
     {
-      icon: "",
+      icon: "🏡",
       name: "Hometown",
     },
     {
-      icon: "",
+      icon: "👩‍🔬",
       name: "My Account",
     },
     {
-      icon: "",
+      icon: "💡",
       name: "Dark Mode",
     },
     {
-      icon: "",
-      name: "Jodel Plus",
-    },
-    {
-      icon: "",
-      name: "Customize app icon",
-    },
-    {
-      icon: "",
-      name: "Enable chat request",
+      icon: "📩",
+      name: "Enable Chat Requests",
     },
   ];
 
   const communityLists = [
     {
-      icon: "",
+      icon: "🗒",
       name: "Community Guidelines",
     },
     {
-      icon: "",
+      icon: "👮‍♂️",
       name: "About Moderations",
     },
     {
-      icon: "",
+      icon: "✌",
       name: "Jodeler Values",
     },
     {
-      icon: "",
+      icon: "😮",
       name: "Joooooooodelahuti",
     },
   ];
 
   const helpLists = [
     {
-      icon: "",
-      name: "FAQ",
+      icon: "🤔",
+      name: "Support Hub",
     },
     {
-      icon: "",
-      name: "Contact us",
+      icon: "✏",
+      name: "Chat with us",
     },
   ];
 
   const otherLists = [
     {
-      icon: "",
+      icon: "🎯",
       name: "Advert on Jodel",
     },
     {
-      icon: "",
+      icon: "👔",
       name: "Jobs",
     },
     {
-      icon: "",
+      icon: "📚",
       name: "Licence",
     },
     {
-      icon: "",
+      icon: "😮",
       name: "Delete Account",
     },
     {
-      icon: "",
+      icon: "📝",
       name: "Personalized ads",
     },
     {
-      icon: "",
+      icon: "📝",
       name: "Terms of Use",
     },
     {
-      icon: "",
+      icon: "📝",
       name: "Privacy Policy",
     },
   ];
@@ -103,7 +96,7 @@ const Settings = () => {
       <div className="settingsMain">
         <div className="settingsHeader">
           <Link className="settingsBackToPersonal" to={"/Personal"}>
-            &#x003C;
+            <FaChevronLeft />
           </Link>
           <p className="settingsMore">More</p>
         </div>
@@ -117,7 +110,7 @@ const Settings = () => {
                 <div>
                   <p>{item.name}</p>
                 </div>
-                <span>&#x003E;</span>
+                <span><FaChevronRight/></span>
               </button>
             ))}
           </div>
@@ -134,7 +127,7 @@ const Settings = () => {
                 <div>
                   <p>{item.name}</p>
                 </div>
-                <span>&#x003E;</span>
+                <span><FaChevronRight/></span>
               </button>
             ))}
           </div>
@@ -151,7 +144,7 @@ const Settings = () => {
                 <div>
                   <p>{item.name}</p>
                 </div>
-                <span>&#x003E;</span>
+                <span><FaChevronRight/></span>
               </button>
             ))}
           </div>
@@ -168,7 +161,7 @@ const Settings = () => {
                 <div>
                   <p>{item.name}</p>
                 </div>
-                <span>&#x003E;</span>
+                <span><FaChevronRight/></span>
               </button>
             ))}
           </div>

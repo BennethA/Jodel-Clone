@@ -1,5 +1,7 @@
 import "./Home.css";
 import LocationHeader from "../Components/LocationHeader";
+import { BiHome } from "react-icons/bi";
+import { BsArrowDown, BsArrowUp } from "react-icons/bs";
 
 const home = () => {
   const posts = 10;
@@ -22,18 +24,22 @@ const home = () => {
               <div className="post" key={index}>
                 <div>
                   <small>
-                    <span>&#127968; Ga</span>
+                    <span>
+                      <BiHome /> Ga
+                    </span>
                     <span>@Main</span>
                     <span>2min</span>
                   </small>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel quaerat laborum dolorem enim omnis maiores voluptates perspiciatis eius? Soluta!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam vel quaerat laborum dolorem enim omnis maiores
+                    voluptates perspiciatis eius? Soluta!
                   </p>
                 </div>
                 <div className="postsVote">
-                  <span>&#8593;</span>
+                  <BsArrowUp />
                   <span>0</span>
-                  <span>&#8595;</span>
+                  <BsArrowDown />
                 </div>
               </div>
             ))}

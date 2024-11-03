@@ -1,12 +1,13 @@
+import { CiSettings } from "react-icons/ci";
 import "./Personal.css";
 
 import { Link } from "react-router-dom";
+import { BiHeart, BiRocket } from "react-icons/bi";
+import { GiFox } from "react-icons/gi";
+import { FaChevronRight } from "react-icons/fa";
 
 const Personal = () => {
   const myJodelLists = [
-    {
-      name: "Community Blog",
-    },
     {
       name: "My Jodels",
     },
@@ -19,36 +20,27 @@ const Personal = () => {
     {
       name: "My Pins",
     },
-  ];
-
-  const powers = [
     {
-      icon: "",
-      name: "0 Boosts",
+      name: "Moderations",
     },
     {
-      icon: "",
-      name: "0 Reactions",
-    },
-    {
-      icon: "",
-      name: "0 Colors",
+      name: "Community Updates",
     },
   ];
 
   const achievements = [
     {
-      icon: "",
+      icon: <BiHeart/>,
       topic: "Thanks",
       subTopic: "overall",
     },
     {
-      icon: "",
+      icon: <BiRocket/>,
       topic: "Karma",
       subTopic: "of the past week",
     },
     {
-      icon: "",
+      icon: <GiFox/>,
       topic: "Days",
       subTopic: "with you",
     },
@@ -59,9 +51,13 @@ const Personal = () => {
       <div className="personalMain">
         <div className="personalHeader">
           <Link className="personalSettings" to={"/Settings"}>
-            &#9881;
+            <CiSettings />
           </Link>
-          <p className="personalLocation">&#128205;Ga North Municipal</p>
+          <p className="personalLocation">Ga North Municipal</p>
+          <Link to={"/Karma"} className="personalKarma">
+            <p>20016</p>
+            <small>My Karma</small>
+          </Link>
         </div>
 
         <div className="heading">
@@ -78,21 +74,8 @@ const Personal = () => {
             {myJodelLists.map((item) => (
               <div className="optionsList" key={item.name}>
                 {item.name}
+                <FaChevronRight />
               </div>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <div className="optionsHead">
-            <p>Powers</p>
-          </div>
-          <div className="powersOptions">
-            {powers.map((item) => (
-              <button key={item.name}>
-                <span className="powersOptionsSymbols">{item.icon}</span>
-                <p>{item.name}</p>
-              </button>
             ))}
           </div>
         </div>
@@ -120,7 +103,7 @@ const Personal = () => {
             </p>
           </div>
           <div className="bottomNavSymbol">
-            <p>&#8594;</p>
+            <FaChevronRight />
           </div>
         </div>
       </div>

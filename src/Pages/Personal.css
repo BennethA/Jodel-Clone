@@ -16,10 +16,28 @@
   background-color: rgb(32, 30, 30);
 }
 
+.personalKarma {
+  right: 5px;
+  display: flex;
+  font-size: 10px;
+  line-height: 10px;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.personalKarma p {
+  font-weight: bold;
+}
+
 .personalSettings {
-  left: 0;
+  left: 5px;
+  display: flex;
   font-size: 25px;
   position: absolute;
+  align-items: center;
+  justify-content: center;
 }
 
 .personalLocation {
@@ -44,29 +62,6 @@
   line-height: 15px;
 }
 
-.powersOptions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.powersOptions button {
-  width: 90px;
-  border: none;
-  padding: 5px 0;
-  border-radius: 10px;
-  background: linear-gradient(160deg, red, blue);
-}
-
-.powersOptionsSymbols {
-  font-size: large;
-}
-
-.powersOptions p {
-  font-size: 12px;
-  font-weight: bold;
-}
-
 .achievementOptions {
   display: flex;
   align-items: center;
@@ -78,7 +73,7 @@
   border: none;
   padding: 5px 0;
   border-radius: 10px;
-  background: linear-gradient(160deg, red, blue);
+  background-color: rgb(54, 54, 54);
 }
 
 .achievemeentOptionsSymbols {
@@ -123,6 +118,5 @@ a {
   width: 10%;
   display: flex;
   align-items: center;
-  font-size: xx-large;
   justify-content: center;
 }

@@ -16,8 +16,11 @@
 }
 
 .locationText {
+  display: flex;
   font-size: 140%;
   font-weight: bold;
+  align-items: center;
+  justify-content: center;
 }
 
 .locationMainHeader a {

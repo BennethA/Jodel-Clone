@@ -1,43 +1,50 @@
 import "./Channels.css";
 import LocationHeader from "../Components/LocationHeader";
+import { BiCheck, BiPlus, BiSearch } from "react-icons/bi";
+import { BsCalendarDate } from "react-icons/bs";
+import { FaCat } from "react-icons/fa";
 
 const Channels = () => {
   const channelOptionsLists = [
     {
-      icon: "",
+      icon: <BsCalendarDate />,
       topic: "Happening Today!",
       subTopic: "Share events & meetups",
     },
     {
-      icon: "",
+      icon: "😻",
       topic: "JodelZoo",
       subTopic:
         "A space for animal lovers to share cute & funny pics & stories of thiet furry friends!",
     },
     {
-      icon: "",
-      topic: "Questions",
-      subTopic: "Ask. Help. Thank. Repeat.",
-    },
-    {
-      icon: "",
+      icon: "🔊",
       topic: "Main",
       subTopic: "Posts which dont fit in any other channel",
+    },
+    {
+      icon: "❓",
+      topic: "Questions",
+      subTopic: "Ask. Help. Thank. Repeat.",
     },
   ];
 
   const suggestionsLists = [
     {
-      icon: "",
-      name: "Traveller",
-    },
-    {
-      icon: "",
+      icon: "🌍",
       name: "International",
     },
     {
-      icon: "",
+      icon: "📪",
+      name: "Feedback",
+    },
+    {
+      icon: "👔",
       name: "JobBoard",
+    },
+    {
+      icon: "🛩",
+      name: "Traveller",
     },
   ];
 
@@ -47,7 +54,9 @@ const Channels = () => {
       <div className="channelsMain">
         <div className="channelsMainHeader">
           <input type="text" placeholder="CHANNELS" />
-          <button>&#x1F50D;</button>
+          <button>
+            <BiSearch />
+          </button>
         </div>
 
         <div>
@@ -62,7 +71,9 @@ const Channels = () => {
                   <p>{item.topic}</p>
                   <small className="channelsSmall">{item.subTopic}</small>
                 </div>
-                <span>&#x2714;</span>
+                <span>
+                  <BiCheck />
+                </span>
               </button>
             ))}
           </div>
@@ -77,7 +88,9 @@ const Channels = () => {
                 <div>
                   <p>{item.name}</p>
                 </div>
-                <span className="plus">+</span>
+                <span className="plus">
+                  <BiPlus/>
+                </span>
               </button>
             ))}
           </div>

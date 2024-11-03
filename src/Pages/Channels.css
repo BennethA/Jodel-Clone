@@ -24,13 +24,14 @@
 }
 
 .channelsMainHeader button {
+  width: 30px;
   border: none;
   height: 30px;
-  width: 30px;
-  font-weight: bold;
-  font-size: larger;
+  display: flex;
   border-radius: 3px;
-  background-color: black;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(22, 22, 22);
 }
 
 .channelsSmall {

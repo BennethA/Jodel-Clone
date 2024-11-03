@@ -44,8 +44,10 @@
   background-color: rgb(29, 27, 27);
 }
 
-.post small span {
-  margin: 0 5px;
+.post small {
+  gap: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .post p {
@@ -58,21 +60,8 @@
   gap: 2px;
   display: flex;
   padding: 0 5px;
-  align-items: right;
+  font-weight: bolder;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-}
-
-.postsVote span {
-  font-size: large;
-  font-weight: bold;
-}
-
-.postsVote span:nth-child(2){
-  margin-top: 4px;
-  font-weight: bolder;
-}
-
-img {
-  width: 100%;
 }

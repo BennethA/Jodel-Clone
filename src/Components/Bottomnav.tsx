@@ -1,16 +1,26 @@
+import { BiHome, BiSearch } from "react-icons/bi";
 import "./Bottomnav.css";
 import { Link } from "react-router-dom";
+import { BsMailbox, BsPerson } from "react-icons/bs";
 
 const Bottomnav = () => {
   return (
     <footer>
-      <Link to={"/"}>&#127968;</Link>
+      <Link to={"/"}>
+        <BiHome />
+      </Link>
 
-      <Link to={"/Channels"}>&#128269;</Link>
+      <Link to={"/Channels"}>
+        <BiSearch />
+      </Link>
 
-      <Link to={"/NotifsAndChats"}>&#128234;</Link>
+      <Link to={"/NotifsAndChats"}>
+        <BsMailbox />
+      </Link>
 
-      <Link to={"/Personal"}>&#128100;</Link>
+      <Link to={"/Personal"}>
+        <BsPerson />
+      </Link>
     </footer>
   );
 };
