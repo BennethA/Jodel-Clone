@@ -8,7 +8,7 @@ const LocationHeader = () => {
       <div className="locationMainHeader">
         <p className="locationText">
           <CiLocationOn />
-          Ga
+          Ga North Municipal
         </p>
         <Link to={"/Karma"}>
           <p>100</p>

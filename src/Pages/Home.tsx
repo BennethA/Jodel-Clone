@@ -25,7 +25,7 @@ const home = () => {
                 <div>
                   <small>
                     <span>
-                      <BiHome /> Ga
+                      <BiHome /> Ga North Municipal
                     </span>
                     <span>@Main</span>
                     <span>2min</span>
