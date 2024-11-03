@@ -1,47 +1,35 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  color: white;
-  box-sizing: border-box;
-}
-
 .channelsMain {
-  top: 90px;
-  position: relative;
+  margin-bottom: 60px;
 }
 
 .channelsMainHeader {
-  left: 0;
-  right: 0;
-  top: 39px;
-  position: fixed;
-  padding: 5px 10px;
+  gap: 5px;
+  top: 40px;
+  z-index: 10;
+  display: flex;
+  position: sticky;
+  padding: 5px 0px;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(32, 30, 30);
 }
 
-.channelsSearch {
-  height: 40px;
-  display: flex;
-  align-items: center;
-}
-
-.channelsSearch input {
-  width: 90%;
-  height: 100%;
+.channelsMainHeader input {
+  padding: 5px;
   border: none;
   outline: none;
-  background: none;
   font-size: large;
   font-weight: bold;
+  background-color: rgb(36, 36, 36);
 }
 
-.channelsSearch button {
-  width: 10%;
-  height: 100%;
+.channelsMainHeader button {
   border: none;
+  height: 30px;
+  width: 30px;
   font-weight: bold;
   font-size: larger;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: black;
 }
 

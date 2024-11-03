@@ -4,17 +4,35 @@
 }
 
 .optionsList {
-  width: 100%;
+  gap: 9px;
   border: none;
   height: 50px;
   display: flex;
+  cursor: pointer;
+  width: 100%;
+  max-width: 330px;
+  min-width: 320px;
+  width: 330px;
   font-size: large;
   text-align: left;
+  margin-bottom: 2px;
   position: relative;
+  padding-right: 5px;
   padding-left: 10px;
   align-items: center;
   border-radius: 10px;
+  justify-content: space-between;
   background-color: rgb(14, 13, 13);
+}
+
+.optionsList > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.optionsList:hover {
+  background-color: rgb(24, 24, 24);
 }
 
 .optionsList:active {
@@ -33,9 +51,4 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.optionsList span {
-  right: 10px;
-  position: absolute;
 }
