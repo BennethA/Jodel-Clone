@@ -1,12 +1,16 @@
 .homeMain {
+  margin-top: 40px;
   margin-bottom: 60px;
 }
 
 .fiterPosts {
-  top: 40px;
+  left: 0;
+  right: 0;
+  top: 39px;
   display: flex;
   padding: 5px 0;
-  position: sticky;
+  position: fixed;
+  max-width: 400px;
   align-items: center;
   justify-content: center;
   background-color: rgb(32, 30, 30);

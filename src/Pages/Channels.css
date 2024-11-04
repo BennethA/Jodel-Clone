@@ -1,22 +1,27 @@
 .channelsMain {
+  margin-top: 40px;
   margin-bottom: 60px;
 }
 
 .channelsMainHeader {
+  left: 0;
   gap: 5px;
-  top: 40px;
+  right: 0;
+  top: 39px;
   z-index: 10;
   display: flex;
-  position: sticky;
+  position: fixed;
   padding: 5px 0px;
+  max-width: 400px;
   align-items: center;
   justify-content: center;
   background-color: rgb(32, 30, 30);
 }
 
 .channelsMainHeader input {
-  padding: 5px;
+  width: 80%;
   border: none;
+  padding: 5px;
   outline: none;
   font-size: large;
   font-weight: bold;
@@ -39,12 +44,6 @@
 }
 
 .plus{
-  width: 40px;
-  display: flex;
-  font-weight: bold;
   border-radius: 5px;
-  font-size: xx-large;
-  align-items: center;
-  justify-content: center;
   background-color: rgb(59, 59, 27);
 }

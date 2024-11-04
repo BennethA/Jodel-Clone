@@ -6,14 +6,12 @@
 }
 
 body {
+  padding: 0 10px;
   display: flex;
+  max-width: 400px;
+  margin-top: 50px;
   align-items: center;
-  justify-content: center;
   background-color: black;
-}
-
-.app {
-  max-width: 330px;
 }
 
 button {

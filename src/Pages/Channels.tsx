@@ -51,14 +51,13 @@ const Channels = () => {
   return (
     <>
       <LocationHeader />
+      <div className="channelsMainHeader">
+        <input type="text" placeholder="CHANNELS" />
+        <button>
+          <BiSearch />
+        </button>
+      </div>
       <div className="channelsMain">
-        <div className="channelsMainHeader">
-          <input type="text" placeholder="CHANNELS" />
-          <button>
-            <BiSearch />
-          </button>
-        </div>
-
         <div>
           <div className="optionsHead">
             <small>MY CHANNELS</small>
@@ -84,12 +83,12 @@ const Channels = () => {
           <div>
             {suggestionsLists.map((item) => (
               <button className="optionsList" key={item.name}>
-                <p>{item.icon}</p>
+                <p className="optionsListSymbols">{item.icon}</p>
                 <div>
                   <p>{item.name}</p>
                 </div>
                 <span className="plus">
-                  <BiPlus/>
+                  <BiPlus />
                 </span>
               </button>
             ))}

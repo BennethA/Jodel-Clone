@@ -1,5 +1,5 @@
 import "./Chats.css";
-import NotifsAndChats from "../Components/NotifsAndChats";
+import NotifsAndChats from "./NotifsAndChats";
 
 const Chats = () => {
   return (

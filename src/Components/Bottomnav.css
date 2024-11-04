@@ -1,16 +1,17 @@
 footer {
+  left: 0;
+  right: 0;
   bottom: 0;
-  height: 50px;
-  /* width: 325px; */
+  z-index: 100;
   display: flex;
   position: fixed;
-  max-width: 330px;
-  min-width: 330px;
+  max-width: 400px;
   align-items: center;
   justify-content: space-around;
   background-color: rgb(32, 30, 30);
 }
 
 footer a {
+  padding: 10px;
   font-size: x-large;
 }

@@ -9,14 +9,14 @@ const home = () => {
   return (
     <>
       <LocationHeader />
-      <div className="homeMain">
-        <div className="fiterPosts">
-          <div>
-            <button>Newest</button>
-            <button>Most Commented</button>
-            <button>Loudest</button>
-          </div>
+      <div className="fiterPosts">
+        <div>
+          <button>Newest</button>
+          <button>Most Commented</button>
+          <button>Loudest</button>
         </div>
+      </div>
+      <div className="homeMain">
         <div className="postsSection">
           {Array(posts)
             .fill(0)

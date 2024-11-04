@@ -4,12 +4,12 @@ import Personal from "./Pages/Personal";
 import Settings from "./Pages/Settings";
 import Channels from "./Pages/Channels";
 import Bottomnav from "./Components/Bottomnav";
-import NotifsAndChats from "./Components/NotifsAndChats";
+import NotifsAndChats from "./Pages/NotifsAndChats";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="app">
+    <div>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

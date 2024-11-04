@@ -48,18 +48,17 @@ const Personal = () => {
 
   return (
     <>
+      <div className="personalHeader">
+        <Link className="personalSettings" to={"/Settings"}>
+          <CiSettings />
+        </Link>
+        <p className="personalLocation">Ga North Municipal</p>
+        <Link to={"/Karma"} className="personalKarma">
+          <p>20016</p>
+          <small>My Karma</small>
+        </Link>
+      </div>
       <div className="personalMain">
-        <div className="personalHeader">
-          <Link className="personalSettings" to={"/Settings"}>
-            <CiSettings />
-          </Link>
-          <p className="personalLocation">Ga North Municipal</p>
-          <Link to={"/Karma"} className="personalKarma">
-            <p>20016</p>
-            <small>My Karma</small>
-          </Link>
-        </div>
-
         <div className="heading">
           <h1 className="headingTitle">JODEL</h1>
           <p className="headingDesc">
