@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "votes": 0,
+    "channel": "main",
+    "comments": 1,
+    "location": "Kumasi",
+    "time": "2mins ago",
+    "postDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel quaerat laborum dolorem enim omnis maiores voluptates perspiciatis eius? Soluta!"
+  },
+  {
+    "id": 2,
+    "votes": 0,
+    "channel": "main",
+    "comments": false,
+    "location": "Accra",
+    "time": "7mins ago",
+    "postDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit voluptates perspiciatis eius? Soluta!"
+  },
+  {
+    "id": 3,
+    "votes": 0,
+    "channel": "main",
+    "comments": 4,
+    "location": "Accra",
+    "time": "14mins ago",
+    "postDescription": "Dolorem enim omnis maiores voluptates perspiciatis eius? Soluta!"
+  },
+  {
+    "id": 4,
+    "votes": 0,
+    "channel": "main",
+    "comments": false,
+    "location": "Accra",
+    "time": "15mins ago",
+    "postDescription": "Perspiciatis eius? Soluta!"
+  },
+  {
+    "id": 5,
+    "votes": 0,
+    "channel": "main",
+    "comments": false,
+    "location": "Aburi",
+    "time": "18mins ago",
+    "postDescription": "To update your Production Deployment, push to the branch."
+  },
+  {
+    "id": 6,
+    "votes": 0,
+    "channel": "main",
+    "comments": false,
+    "location": "Accra",
+    "time": "20mins ago",
+    "postDescription": "Totam vel quaerat laborum dolorem enim omnis maiores voluptates perspiciatis eius? Soluta!"
+  },
+  {
+    "id": 7,
+    "votes": 0,
+    "channel": "main",
+    "comments": 9,
+    "location": "Madina",
+    "time": "25mins ago",
+    "postDescription": "Laborum dolorem enim omnis maiores voluptates perspiciatis eius? Soluta!"
+  },
+  {
+    "id": 8,
+    "votes": 0,
+    "channel": "main",
+    "comments": 20,
+    "location": "Accra",
+    "time": "28mins ago",
+    "postDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel quaera."
+  },
+  {
+    "id": 9,
+    "votes": 0,
+    "channel": "main",
+    "comments": false,
+    "location": "Adenta",
+    "time": "30mins ago",
+    "postDescription": "Run these additional validators on your site to check additional SEO best practices."
+  },
+  {
+    "id": 10,
+    "votes": 0,
+    "channel": "main",
+    "comments": false,
+    "location": "Accra",
+    "time": "34mins ago",
+    "postDescription": "These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on Core Web Vitals. Learn more about Google Search Essentials."
+  },
+  {
+    "id": 11,
+    "votes": 0,
+    "channel": "main",
+    "comments": 4,
+    "location": "Cape Coast",
+    "time": "36mins ago",
+    "postDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on conducting an accessibility review."
+  },
+  {
+    "id": 12,
+    "votes": 0,
+    "channel": "main",
+    "comments": 9,
+    "location": "Kumasi",
+    "time": "40mins ago",
+    "postDescription": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+  },
+  {
+    "id": 13,
+    "votes": 0,
+    "channel": "main",
+    "comments": 1,
+    "location": "Tema",
+    "time": "1hour ago",
+    "postDescription": "These checks highlight opportunities to improve the accessibility of your web app. Automatic detection can only detect a subset of issues and does not guarantee the accessibility of your web app, so manual testing is also encouraged."
+  }
+]

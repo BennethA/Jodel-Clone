@@ -4,7 +4,6 @@
 
 body {
   display: flex;
-  max-height: 1200px;
   align-items: center;
   justify-content: center;
   background-color: black;

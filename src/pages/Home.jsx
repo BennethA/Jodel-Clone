@@ -1,9 +1,14 @@
-import { useState } from "react";
-import { BiHome } from "react-icons/bi";
+import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { CiLocationOn } from "react-icons/ci";
+import { FaCircleDot } from "react-icons/fa6";
+import { BiComment, BiPlus } from "react-icons/bi";
 import LocationHeader from "../components/LocationHeader";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import DataContext from "../Context/DataContext";
 
 export default function Home() {
+  const { posts, setPosts } = useContext(DataContext);
   const [selectedHeadButton, setSelectedHeadButton] = useState("Newest");
   const homeHeadButtons = [
     {
@@ -17,12 +22,32 @@ export default function Home() {
     },
   ];
 
-  const posts = 10;
+  const upVote = (post) => {
+    setPosts(
+      posts.map((p) => {
+        if (p.id === post.id) {
+          return { ...p, votes: p.votes + 1 };
+        }
+        return p;
+      })
+    );
+  };
+
+  const downVote = (post) => {
+    setPosts(
+      posts.map((p) => {
+        if (p.id === post.id && p.votes > 0) {
+          return { ...p, votes: p.votes - 1 };
+        }
+        return p;
+      })
+    );
+  };
 
   return (
-    <div>
+    <div className="text-white my-[40px]">
       <LocationHeader />
-      <div className="flex bg-[#333333] items-center justify-center h-[40px] sticky top-[40px] z-10">
+      <div className="flex bg-[#333333] items-center justify-center h-[40px] sticky top-[40px] z-10 w-[330px]">
         <div className="rounded bg-[#202020] overflow-hidden">
           {homeHeadButtons.map((item) => (
             <button
@@ -41,36 +66,63 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="bg-[#1b1b1b] py-2 my-[40px]">
-        <div className="flex flex-col gap-3 px-1">
-          {Array(posts)
-            .fill(0)
-            .map((_, index) => (
-              <div
-                className="bg-black text-white rounded-lg flex  items-center p-[7px]"
-                key={index}
-              >
-                <div className="flex flex-col gap-[2px]">
-                  <small className="flex items-center gap-1 text-[10px]">
-                    <BiHome className="text-[13px]"/> Ga North Municipal
-                    <span>@Main</span>
-                    <span>2min</span>
-                  </small>
-                  <p className="leading-[14px] text-[13px] text-gray-300">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Totam vel quaerat laborum dolorem enim omnis maiores
-                    voluptates perspiciatis eius? Soluta!
-                  </p>
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                  <FaChevronUp className="cursor-pointer" />
-                  <span className="font-semibold">0</span>
-                  <FaChevronDown className="cursor-pointer" />
-                </div>
+      <main className="flex flex-col gap-2 p-1">
+        {posts.map((post) => (
+          <div
+            className="bg-[#0f0f0f] text-white rounded-lg flex p-[7px] flex-col hover:bg-[#131212]"
+            key={post.id}
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-[2px] text-[10px]">
+                <span className="bg-black px-1 rounded-full">
+                  @{post.channel}
+                </span>
+                <CiLocationOn className="text-[13px]" />
+                {post.location}
+                <FaCircleDot className="text-[2px] mx-[2px]" />
+                <span>{post.time}</span>
               </div>
-            ))}
+              <p className="flex gap-1 mr-[1px]">
+                <FaCircleDot className="text-[2px]" />
+                <FaCircleDot className="text-[2px]" />
+                <FaCircleDot className="text-[2px]" />
+              </p>
+            </div>
+            <div className="flex gap-[2px] justify-between">
+              <Link to={`/SinglePost/${post.id}`}>
+                <p className="leading-[14px] text-[13px] text-gray-300 mt-1">
+                  {post.postDescription}
+                </p>
+                {post.comments && (
+                  <div className="flex items-center text-[13px] mt-2 ml-1 gap-1 font-semibold">
+                    <BiComment />
+                    <p>{post.comments}</p>{" "}
+                  </div>
+                )}
+              </Link>
+              <div className="flex flex-col items-center justify-center h-full">
+                <FaChevronUp
+                  className="cursor-pointer"
+                  onClick={() => upVote(post)}
+                />
+                <span className="font-semibold ml-[1px]">{post.votes}</span>
+                <FaChevronDown
+                  className="cursor-pointer"
+                  onClick={() => downVote(post)}
+                />
+              </div>
+            </div>
+          </div>
+        ))}
+        <div className="fixed bottom-[50px] right-[45%] left-[45%] p-3 h-[50px]  flex items-center justify-center">
+          <Link
+            to="/CreatePost"
+            className="rounded-full border-[4px] p-3 w-[50px] h-[50px] flex items-center justify-center text-2xl bg-[#13131398]"
+          >
+            <BiPlus />
+          </Link>
         </div>
-      </div>
+      </main>
     </div>
   );
 }

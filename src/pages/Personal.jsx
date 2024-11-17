@@ -1,4 +1,4 @@
-import { GiFox } from "react-icons/gi";
+import { LuCat } from "react-icons/lu";
 import { FaChevronRight } from "react-icons/fa";
 import { BiHeart, BiRocket } from "react-icons/bi";
 import LocationHeader from "../components/LocationHeader";
@@ -37,7 +37,7 @@ export default function Personal() {
       subTopic: "of the past week",
     },
     {
-      icon: <GiFox />,
+      icon: <LuCat />,
       topic: "Days",
       subTopic: "with you",
     },
