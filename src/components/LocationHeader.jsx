@@ -17,7 +17,7 @@ export default function LocationHeader() {
   } = useContext(DataContext);
   const locations = useLocation();
   return (
-    <div>
+    <nav>
       <div className="text-white fixed top-0 w-[330px] flex items-center justify-center bg-[#333333] h-[40px] z-10">
         {locations.pathname === "/Languages" && (
           <Link to="/" className="absolute left-[13px]">
@@ -82,33 +82,31 @@ export default function LocationHeader() {
             <div className="overflow-hidden">
               {locationsList.map((item, index) => (
                 <button
-                  className={`flex gap-1 justify-between items-center w-full p-2 hover:bg-[#202020] border-b px-[13px]`}
+                  className={`flex gap-2 justify-between items-center w-full p-2 hover:bg-[#202020] border-b px-[13px]`}
                   key={index}
                   onClick={() => {
                     setOpenDropDown(!openDropDown);
                     setLocation(item.location);
                   }}
                 >
-                  <div
+                  <span
                     className={`p-1 rounded-full ${
                       location === item.location
                         ? "bg-yellow-500"
                         : "bg-[#141414]"
                     }`}
                   >
-                    <div>{item.icon}</div>
-                  </div>
-                  <div className="w-full text-left leading-[15px] font-bold">
-                    <div
-                      className={`text-[13px] ${
+                    {item.icon}
+                  </span>
+                  <div className="w-full text-left leading-[15px] font-bold flex flex-col gap-1">
+                    <p
+                      className={`text-[16px] ${
                         location === item.location && "text-yellow-500"
                       }`}
                     >
                       {item.location}
-                    </div>
-                    <div className="text-[10px] text-gray-300">
-                      {item.subTopic}
-                    </div>
+                    </p>
+                    <p className="text-[11px] text-gray-300">{item.subTopic}</p>
                   </div>
                   {item.subIcon && (
                     <div className="bg-[#141414] p-1 rounded-full">
@@ -125,38 +123,38 @@ export default function LocationHeader() {
             </p>
             <div className="overflow-hidden">
               <button className="flex gap-1 justify-between items-center w-full p-2 hover:bg-[#202020] px-[13px]">
-                <div className="w-full text-left leading-[15px] font-bold">
-                  <div className="text-[13px]">Dynamic radius</div>
-                  <div className="text-[10px] text-gray-300">
+                <div className="w-full text-left leading-[15px] font-bold flex flex-col gap-1">
+                  <p className="text-[16px]">Dynamic radius</p>
+                  <p className="text-[11px] text-gray-300">
                     Automatically increase the radius of posts you see in low
                     activity areas
-                  </div>
+                  </p>
                 </div>
-                <div>
-                  <FaChevronRight />
-                </div>
+
+                <FaChevronRight />
               </button>
               <Link
                 to="/Languages"
                 onClick={() => setOpenDropDown(!openDropDown)}
                 className="flex gap-1 justify-between items-center w-full p-2 hover:bg-[#202020] px-[13px]"
               >
-                <div className="w-full text-left leading-[15px] font-bold">
-                  <div className="text-[13px]">Language</div>
-                  <div className="text-[10px] text-gray-300 flex gap-1">
+                <div
+                  className="w-full text-left leading-[15px] font-bold flex flex-col gap-1"
+                >
+                  <div className="text-[16px]">Language</div>
+                  <div className="text-[11px] text-gray-300 flex gap-1">
                     {languages.map((language, index) => (
                       <p key={index}>{language.selected && language.name}</p>
                     ))}
                   </div>
                 </div>
-                <div>
-                  <FaChevronRight />
-                </div>
+
+                <FaChevronRight />
               </Link>
             </div>
           </div>
         </div>
       )}
-    </div>
+    </nav>
   );
 }

@@ -103,13 +103,10 @@ export default function Settings() {
                 className="flex gap-1 justify-between items-center w-full p-2 hover:bg-[#202020]"
                 key={item.name}
               >
-                <p className="optionsListSymbols">{item.icon}</p>
-                <div className="w-full text-left">
-                  <div>{item.name}</div>
-                </div>
-                <span>
-                  <FaChevronRight />
-                </span>
+                <span>{item.icon}</span>
+                <p className="w-full text-left">{item.name}</p>
+
+                <FaChevronRight />
               </button>
             ))}
           </div>
@@ -123,13 +120,10 @@ export default function Settings() {
                 className="flex gap-1 justify-between items-center w-full p-2 hover:bg-[#202020]"
                 key={item.name}
               >
-                <p className="optionsListSymbols">{item.icon}</p>
-                <div className="w-full text-left">
-                  <div>{item.name}</div>
-                </div>
-                <span>
-                  <FaChevronRight />
-                </span>
+                <span>{item.icon}</span>
+                <p className="w-full text-left">{item.name}</p>
+
+                <FaChevronRight />
               </button>
             ))}
           </div>
@@ -143,13 +137,10 @@ export default function Settings() {
                 className="flex gap-1 justify-between items-center w-full p-2 hover:bg-[#202020]"
                 key={item.name}
               >
-                <p className="optionsListSymbols">{item.icon}</p>
-                <div className="w-full text-left">
-                  <div>{item.name}</div>
-                </div>
-                <span>
-                  <FaChevronRight />
-                </span>
+                <p>{item.icon}</p>
+                <p className="w-full text-left">{item.name}</p>
+
+                <FaChevronRight />
               </button>
             ))}
           </div>
@@ -163,28 +154,24 @@ export default function Settings() {
                 className="flex gap-1 justify-between items-center w-full p-2 hover:bg-[#202020]"
                 key={item.name}
               >
-                <p className="optionsListSymbols">{item.icon}</p>
-                <div className="w-full text-left">
-                  <div>{item.name}</div>
-                </div>
-                <span>
-                  <FaChevronRight />
-                </span>
+                <p>{item.icon}</p>
+                <p className="w-full text-left">{item.name}</p>
+
+                <FaChevronRight />
               </button>
             ))}
           </div>
         </div>
 
-        <div className="bg-[#1d1d1d] mt-3 relative py-2 rounded-lg hover:bg-[#202020] cursor-pointer">
+        <div className="bg-[#1d1d1d] mt-3 relative py-2 rounded-lg hover:bg-[#202020] cursor-pointer flex items-center p-1">
           <div className="text-center flex flex-col items-center justify-center">
             <p className="font-bold">Invite Friends</p>
-            <p className="leading-[14px] text-[10px] font-semibold text-gray-300 w-[90%]">
+            <p className="leading-[14px] text-[11px] font-semibold text-gray-300 w-[90%]">
               Invite your friends and let them discover their local community!
             </p>
           </div>
-          <div className="absolute right-[4px] top-[40%] text-[13px]">
-            <FaChevronRight />
-          </div>
+
+          <FaChevronRight className="text-[13px]" />
         </div>
       </div>
     </div>

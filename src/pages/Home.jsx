@@ -8,7 +8,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import DataContext from "../Context/DataContext";
 
 export default function Home() {
-  const { posts, setPosts } = useContext(DataContext);
+  const { posts, upVote, downVote } = useContext(DataContext);
   const [selectedHeadButton, setSelectedHeadButton] = useState("Newest");
   const homeHeadButtons = [
     {
@@ -22,32 +22,10 @@ export default function Home() {
     },
   ];
 
-  const upVote = (post) => {
-    setPosts(
-      posts.map((p) => {
-        if (p.id === post.id) {
-          return { ...p, votes: p.votes + 1 };
-        }
-        return p;
-      })
-    );
-  };
-
-  const downVote = (post) => {
-    setPosts(
-      posts.map((p) => {
-        if (p.id === post.id && p.votes > 0) {
-          return { ...p, votes: p.votes - 1 };
-        }
-        return p;
-      })
-    );
-  };
-
   return (
     <div className="text-white my-[40px]">
       <LocationHeader />
-      <div className="flex bg-[#333333] items-center justify-center h-[40px] sticky top-[40px] z-10 w-[330px]">
+      <div className="flex bg-[#333333] items-center justify-center h-[40px] fixed z-10 w-[330px]">
         <div className="rounded bg-[#202020] overflow-hidden">
           {homeHeadButtons.map((item) => (
             <button
@@ -66,14 +44,14 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <main className="flex flex-col gap-2 p-1">
+      <main className="flex flex-col gap-2 p-1 mt-[40px]">
         {posts.map((post) => (
           <div
             className="bg-[#0f0f0f] text-white rounded-lg flex p-[7px] flex-col hover:bg-[#131212]"
             key={post.id}
           >
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-[2px] text-[10px]">
+              <div className="flex items-center gap-[2px] text-[11px]">
                 <span className="bg-black px-1 rounded-full">
                   @{post.channel}
                 </span>
@@ -88,9 +66,9 @@ export default function Home() {
                 <FaCircleDot className="text-[2px]" />
               </p>
             </div>
-            <div className="flex gap-[2px] justify-between">
+            <div className="flex gap-[5px] justify-between">
               <Link to={`/SinglePost/${post.id}`}>
-                <p className="leading-[14px] text-[13px] text-gray-300 mt-1">
+                <p className="leading-[18px] text-[13px] text-gray-300 mt-1">
                   {post.postDescription}
                 </p>
                 {post.comments && (
@@ -100,7 +78,7 @@ export default function Home() {
                   </div>
                 )}
               </Link>
-              <div className="flex flex-col items-center justify-center h-full">
+              <div className="flex flex-col items-center justify-center">
                 <FaChevronUp
                   className="cursor-pointer"
                   onClick={() => upVote(post)}

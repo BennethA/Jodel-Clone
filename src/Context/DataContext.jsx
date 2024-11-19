@@ -2,8 +2,8 @@
 import Posts from "../Posts.json";
 import { CiLocationOn } from "react-icons/ci";
 import { createContext, useState } from "react";
-import { BiComment, BiDice1, BiHome, BiRepeat } from "react-icons/bi";
 import { FaChevronUp, FaCrown } from "react-icons/fa";
+import { BiComment, BiDice1, BiHome, BiRepeat } from "react-icons/bi";
 const DataContext = createContext({});
 
 export function DataProvider({ children }) {
@@ -97,6 +97,28 @@ export function DataProvider({ children }) {
     },
   ];
 
+  const upVote = (post) => {
+    setPosts(
+      posts.map((p) => {
+        if (p.id === post.id) {
+          return { ...p, votes: p.votes + 1 };
+        }
+        return p;
+      })
+    );
+  };
+
+  const downVote = (post) => {
+    setPosts(
+      posts.map((p) => {
+        if (p.id === post.id && p.votes > 0) {
+          return { ...p, votes: p.votes - 1 };
+        }
+        return p;
+      })
+    );
+  };
+
   return (
     <DataContext.Provider
       value={{
@@ -110,7 +132,7 @@ export function DataProvider({ children }) {
         notifications,
         chats,
         posts,
-        setPosts,
+        setPosts,upVote,downVote
       }}
     >
       {children}

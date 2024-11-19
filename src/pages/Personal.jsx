@@ -84,30 +84,27 @@ export default function Personal() {
             {achievements.map((item) => (
               <button
                 key={item.topic}
-                className="flex flex-col gap-1 items-center p-1 rounded-lg w-[80px] bg-[#30303083] hover:bg-[#202020]"
+                className="flex flex-col gap-1 items-center p-1 rounded-lg w-[95px] bg-[#30303083] hover:bg-[#202020]"
               >
-                <div>{item.icon}</div>
-                <div className="leading-[8px]">
-                  <p className="text-[12px]">- {item.topic}</p>
-                  <small className="text-[9px] text-gray-400">
-                    {item.subTopic}
-                  </small>
+                <span>{item.icon}</span>
+                <div className="leading-[8px] flex flex-col gap-1">
+                  <p className="text-[14px]">- {item.topic}</p>
+                  <p className="text-[11px] text-gray-400">{item.subTopic}</p>
                 </div>
               </button>
             ))}
           </div>
         </div>
 
-        <div className="bg-[#1d1d1d] mt-3 relative py-2 rounded-lg hover:bg-[#202020] cursor-pointer">
+        <div className="bg-[#1d1d1d] mt-3 relative py-2 rounded-lg hover:bg-[#202020] cursor-pointer flex items-center p-1">
           <div className="text-center flex flex-col items-center justify-center">
             <p className="font-bold">Invite Friends</p>
-            <p className="leading-[14px] text-[10px] font-semibold text-gray-300 w-[90%]">
+            <p className="leading-[14px] text-[11px] font-semibold text-gray-300 w-[90%]">
               Invite your friends and let them discover their local community!
             </p>
           </div>
-          <div className="absolute right-[4px] top-[40%] text-[13px]">
-            <FaChevronRight />
-          </div>
+
+          <FaChevronRight className="text-[13px]" />
         </div>
       </div>
     </div>
